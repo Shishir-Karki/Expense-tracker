@@ -30,7 +30,7 @@ const App = () => {
   const remainingBalance = budget - totalExpenses;
 
   return (
-    <div className="min-h-screen bg-[#1a1a1a]">
+    <div className="min-h-screen bg-[#1a1a1a] ">
       <div className="container mx-auto p-6 max-w-lg">
         <div className="flex justify-between items-center mb-8">
           <Header />
@@ -43,7 +43,7 @@ const App = () => {
             +
           </button>
         </div>
-        <div className="space-y-4 mb-10">
+        <div className="space-y-4 mb-10 text-3xl">
           <SummaryCard title="Total Expenses" amount={`$${totalExpenses}`} />
           <SummaryCard
             title="Total Budget"

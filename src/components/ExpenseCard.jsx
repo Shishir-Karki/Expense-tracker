@@ -14,15 +14,14 @@ const ExpenseCard = ({ expenses }) => {
           <div className="flex items-center gap-3">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div>
-              <p className="text-xl font-light text-gray-200">${expense.amount}</p>
-              <p className="text-xs text-gray-500">{expense.note}</p>
+              <p className="text-2xl font-light text-gray-200">${expense.amount}</p>
+              <p className="text-xl text-gray-500">{expense.note}</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <p className="text-xs text-gray-500">
               {new Date(expense.timestamp).toLocaleString()}
             </p>
-            <button className="text-gray-500 hover:text-gray-300 text-lg">⋮</button>
           </div>
         </div>
       ))
