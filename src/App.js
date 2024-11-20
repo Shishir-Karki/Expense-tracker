@@ -46,9 +46,9 @@ const App = () => {
         <div className="space-y-4 mb-10 text-3xl">
           <SummaryCard title="Total Expenses" amount={`$${totalExpenses}`} />
           <SummaryCard
-            title="Total Budget"
-            amount={`$${budget}`}
-            details={`Remaining Balance: $${remainingBalance}`}
+            title="Remaining Balance"
+            amount={`$${remainingBalance}`}
+            details={`Total Budget: $${budget}`}
           />
         </div>
         <ExpenseCard expenses={expenses} />
