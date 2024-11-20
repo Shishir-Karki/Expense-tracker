@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-900 text-gray-100;
+}
+
+.card {
+  @apply bg-card-bg backdrop-blur-sm p-6 rounded-xl border border-gray-800/50;
+}
+
+.floating-button {
+  @apply fixed bottom-6 right-6 bg-card-bg text-white w-14 h-14 rounded-2xl shadow-lg text-2xl flex items-center justify-center hover:bg-gray-800/50 border border-gray-800/50;
+}
